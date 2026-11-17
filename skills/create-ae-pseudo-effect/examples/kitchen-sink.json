@@ -1,0 +1,33 @@
+{
+  "name": "FFX Kitchen Sink",
+  "matchName": "Pseudo/FFX_KitchenSink_v1",
+  "controls": [
+    { "type": "label", "name": "Every control type", "dim": true },
+    { "type": "slider", "name": "Amount", "default": 42.5, "validMin": -1000, "validMax": 1000, "sliderMin": 0, "sliderMax": 100, "precision": 2 },
+    { "type": "slider", "name": "Opacity", "default": 75, "validMin": 0, "validMax": 100, "precision": 1, "display": "percent" },
+    { "type": "slider", "name": "Size", "default": 200, "validMin": 0, "validMax": 4000, "sliderMin": 0, "sliderMax": 1000, "precision": 0, "display": "pixel" },
+    { "type": "slider", "name": "Seed", "default": 7, "validMin": 0, "validMax": 9999, "sliderMin": 0, "sliderMax": 100, "precision": 0, "keyframes": false },
+    { "type": "angle", "name": "Rotation", "default": 45 },
+    { "type": "checkbox", "name": "Enable", "default": true },
+    { "type": "checkbox", "name": "Static Toggle", "default": false, "keyframes": false },
+    { "type": "color", "name": "Fill", "default": [255, 128, 0] },
+    { "type": "point", "name": "Center", "default": [0.25, 0.75] },
+    { "type": "point3d", "name": "Target 3D", "default": [0.2, 0.4, 0.6] },
+    { "type": "popup", "name": "Mode", "options": ["Linear", "Ease", "(-", "Bounce"], "default": 2 },
+    { "type": "layer", "name": "Source Layer" },
+    {
+      "type": "group",
+      "name": "Advanced",
+      "controls": [
+        { "type": "slider", "name": "Inner", "default": 1, "validMin": 0, "validMax": 10, "precision": 2 },
+        {
+          "type": "group",
+          "name": "Nested",
+          "controls": [{ "type": "angle", "name": "Inner Angle", "default": 90 }]
+        }
+      ]
+    },
+    { "type": "slider", "name": "Hidden Driver", "default": 3, "validMin": 0, "validMax": 10, "invisible": true },
+    { "type": "label", "name": "v1.0" }
+  ]
+}
